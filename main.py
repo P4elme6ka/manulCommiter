@@ -19,7 +19,7 @@ def get_manul_phrase(num):
 
 
 def main():
-    repo = git.cmd.Repo(gitRepoPath)
+    repo = git.Repo(gitRepoPath)
     repo.git.pull()
     file_path = os.path.join(gitRepoPath, repoFilePath)
     with open(file_path, "rb") as f:
